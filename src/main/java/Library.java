@@ -27,5 +27,9 @@ public class Library {
         return this.books.remove(index);
     }
 
+    public Boolean takeBookObject(Book book) {
+        return this.books.remove(book);
+    }
+
 
 }

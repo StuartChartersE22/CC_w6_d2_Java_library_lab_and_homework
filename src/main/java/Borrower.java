@@ -12,4 +12,11 @@ public class Borrower {
     public int getBookCount() {
         return this.books.size();
     }
+
+    public void borrowsBook(Library library, Book book) {
+        if(library.takeBookObject(book)){
+            this.books.add(book);
+        }
+    }
+
 }

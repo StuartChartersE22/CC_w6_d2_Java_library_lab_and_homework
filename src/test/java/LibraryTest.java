@@ -50,6 +50,14 @@ public class LibraryTest {
         assertEquals(1, library.bookCount());
     }
 
+    @Test
+    public void canGetBookObject(){
+        library.addBook(book1);
+        library.addBook(book2);
+        assertEquals(true, library.takeBookObject(book1));
+        assertEquals(1, library.bookCount());
+    }
+
 
 //    @Test
 //    public void libraryContainsBooks(){
