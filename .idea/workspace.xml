@@ -27,15 +27,13 @@
           <file leaf-file-name="Library.java" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/main/java/Library.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="90">
-                  <caret line="6" column="23" selection-start-line="6" selection-start-column="23" selection-end-line="6" selection-end-column="23" />
+                <state relative-caret-position="232">
+                  <caret line="17" column="24" lean-forward="true" selection-start-line="17" selection-start-column="24" selection-end-line="17" selection-end-column="24" />
                   <folding>
                     <element signature="e#192#193#0" expanded="true" />
                     <element signature="e#226#227#0" expanded="true" />
-                    <element signature="e#262#263#0" expanded="true" />
-                    <element signature="e#281#282#0" expanded="true" />
-                    <element signature="e#383#384#0" expanded="true" />
-                    <element signature="e#409#410#0" expanded="true" />
+                    <element signature="e#455#456#0" expanded="true" />
+                    <element signature="e#491#492#0" expanded="true" />
                   </folding>
                 </state>
               </provider>
@@ -79,8 +77,8 @@
           <file leaf-file-name="LibraryTest.java" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/test/java/LibraryTest.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="210">
-                  <caret line="14" column="5" lean-forward="true" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
+                <state relative-caret-position="291">
+                  <caret line="41" column="45" selection-start-line="41" selection-start-column="45" selection-end-line="41" selection-end-column="45" />
                   <folding>
                     <element signature="imports" expanded="true" />
                     <element signature="e#351#352#0" expanded="true" />
@@ -537,6 +535,23 @@
       </option>
       <patterns />
     </configuration>
+    <configuration name="LibraryTest.cantAddBookIfAtCapacity" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="LibraryLab_test" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="LibraryTest" />
+      <option name="METHOD_NAME" value="cantAddBookIfAtCapacity" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
+    </configuration>
     <configuration name="LibraryTest.libraryStartsEmpty" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="LibraryLab_test" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
@@ -597,10 +612,12 @@
       <item itemvalue="JUnit.BookTest" />
       <item itemvalue="JUnit.LibraryTest.libraryStartsEmpty" />
       <item itemvalue="JUnit.LibraryTest" />
+      <item itemvalue="JUnit.LibraryTest.cantAddBookIfAtCapacity" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.LibraryTest" />
+        <item itemvalue="JUnit.LibraryTest.cantAddBookIfAtCapacity" />
         <item itemvalue="JUnit.LibraryTest.libraryStartsEmpty" />
         <item itemvalue="JUnit.BookTest" />
         <item itemvalue="JUnit.BookTest.canGetBookName" />
@@ -628,6 +645,9 @@
       <configuration name="LibraryTest.libraryStartsEmpty" configurationId="JUnit" />
     </history-entry>
     <history-entry file="LibraryTest - 2018.06.26 at 15h 37m 58s.xml">
+      <configuration name="LibraryTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="LibraryTest - 2018.06.26 at 15h 44m 24s.xml">
       <configuration name="LibraryTest" configurationId="JUnit" />
     </history-entry>
   </component>
@@ -698,23 +718,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Library.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="23" selection-start-line="6" selection-start-column="23" selection-end-line="6" selection-end-column="23" />
+        <state relative-caret-position="232">
+          <caret line="17" column="24" lean-forward="true" selection-start-line="17" selection-start-column="24" selection-end-line="17" selection-end-column="24" />
           <folding>
             <element signature="e#192#193#0" expanded="true" />
             <element signature="e#226#227#0" expanded="true" />
-            <element signature="e#262#263#0" expanded="true" />
-            <element signature="e#281#282#0" expanded="true" />
-            <element signature="e#383#384#0" expanded="true" />
-            <element signature="e#409#410#0" expanded="true" />
+            <element signature="e#455#456#0" expanded="true" />
+            <element signature="e#491#492#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/LibraryTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="5" lean-forward="true" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
+        <state relative-caret-position="291">
+          <caret line="41" column="45" selection-start-line="41" selection-start-column="45" selection-end-line="41" selection-end-column="45" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#351#352#0" expanded="true" />
