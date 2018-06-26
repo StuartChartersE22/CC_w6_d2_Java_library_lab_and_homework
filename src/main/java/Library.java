@@ -41,4 +41,15 @@ public class Library {
     public int numberOfBooksByGenre(Genre genre) {
         return this.inventory.get(genre);
     }
+
+
+    public HashMap<Genre, Integer> getInventoryNotAttr() {
+        HashMap<Genre, Integer> inventory = new HashMap<>();
+        for (Book book : this.books){
+            int numberOfBooks = inventory.getOrDefault(book.getGenre(), 0);
+            numberOfBooks += 1;
+            inventory.put(book.getGenre(),numberOfBooks);
+        }
+        return inventory;
+    }
 }

@@ -1,6 +1,8 @@
 import org.junit.Before;
 import org.junit.Test;
 
+import java.util.HashMap;
+
 import static org.junit.Assert.assertEquals;
 
 public class LibraryTest {
@@ -61,4 +63,10 @@ public class LibraryTest {
         assertEquals(1, library.numberOfBooksByGenre(Genre.SCIFI));
     }
 
+    @Test
+    public void getInventoryMethodProduced(){
+        HashMap<Genre, Integer> inventory = library.getInventoryNotAttr();
+        int numberOfBooks = inventory.get(Genre.SCIFI);
+        assertEquals(1, numberOfBooks);
+    }
 }
