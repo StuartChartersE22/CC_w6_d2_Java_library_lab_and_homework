@@ -1,6 +1,7 @@
 import org.junit.Before;
 import org.junit.Test;
 
+import java.util.ArrayList;
 import java.util.HashMap;
 
 import static org.junit.Assert.assertEquals;
@@ -64,9 +65,15 @@ public class LibraryTest {
     }
 
     @Test
-    public void getInventoryMethodProduced(){
+    public void canGetInventoryMethodProduced(){
         HashMap<Genre, Integer> inventory = library.getInventoryNotAttr();
         int numberOfBooks = inventory.get(Genre.SCIFI);
         assertEquals(1, numberOfBooks);
+    }
+
+    @Test
+    public void canGetBooksByGenre(){
+        ArrayList<Book> booksInGenre = library.getBooksByGenre(Genre.HORROR);
+        assertEquals(1, booksInGenre.size());
     }
 }

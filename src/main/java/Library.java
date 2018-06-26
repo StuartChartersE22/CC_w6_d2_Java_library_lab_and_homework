@@ -52,4 +52,14 @@ public class Library {
         }
         return inventory;
     }
+
+    public ArrayList<Book> getBooksByGenre(Genre genre) {
+        ArrayList<Book> booksInGenre = new ArrayList<>();
+        for(Book book : this.books){
+            if(book.getGenre() == genre){
+                booksInGenre.add(book);
+            }
+        }
+        return booksInGenre;
+    }
 }
