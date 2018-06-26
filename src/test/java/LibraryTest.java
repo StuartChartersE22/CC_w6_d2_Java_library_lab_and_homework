@@ -10,7 +10,7 @@ public class LibraryTest {
 
     @Before
     public void before(){
-        library = new Library();
+        library = new Library(2);
         book1 = new Book("Five Children and It");
     }
 
@@ -25,6 +25,10 @@ public class LibraryTest {
         assertEquals(1, library.bookCount());
     }
 
+    @Test
+    public void hasCapacity(){
+        assertEquals(2, library.getCapacity());
+    }
 //    @Test
 //    public void libraryContainsBooks(){
 //        assertEquals(1,library.bookCount())
