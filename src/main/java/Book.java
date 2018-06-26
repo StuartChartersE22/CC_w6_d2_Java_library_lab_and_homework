@@ -11,6 +11,7 @@ public class Book {
         return this.name;
     }
 
-
-
+    public Genre getGenre() {
+        return this.genre;
+    }
 }

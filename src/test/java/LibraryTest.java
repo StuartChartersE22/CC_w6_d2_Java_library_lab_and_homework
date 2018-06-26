@@ -12,56 +12,53 @@ public class LibraryTest {
 
     @Before
     public void before(){
-        library = new Library(2);
+        library = new Library(4);
         book1 = new Book("Five Children and It", Genre.CHILDRENS);
         book2 = new Book("It", Genre.HORROR);
         book3 = new Book("Itch 'ikers guide to t' galaxe", Genre.SCIFI);
+        library.addBook(book1);
+        library.addBook(book2);
+        library.addBook(book3);
     }
 
-    @Test
-    public void libraryStartsEmpty(){
-        assertEquals(0, library.bookCount());
-    }
+//    @Test
+//    public void libraryStartsEmpty(){
+//        assertEquals(0, library.bookCount());
+//    }
 
     @Test
     public void canAddBookToLibrary(){
         library.addBook(book1);
-        assertEquals(1, library.bookCount());
+        assertEquals(4, library.bookCount());
     }
 
     @Test
     public void hasCapacity(){
-        assertEquals(2, library.getCapacity());
+        assertEquals(4, library.getCapacity());
     }
 
     @Test
     public void cantAddBookIfAtCapacity(){
-        library.addBook(book1);
-        library.addBook(book2);
         library.addBook(book3);
-        assertEquals(2, library.bookCount());
+        library.addBook(book3);
+        assertEquals(4, library.bookCount());
     }
 
     @Test
     public void canGetBookByIndex(){
-        library.addBook(book1);
-        library.addBook(book2);
         library.takeBook(1);
-        assertEquals(1, library.bookCount());
+        assertEquals(2, library.bookCount());
     }
 
     @Test
     public void canGetBookObject(){
-        library.addBook(book1);
-        library.addBook(book2);
         assertEquals(true, library.takeBookObject(book1));
-        assertEquals(1, library.bookCount());
+        assertEquals(2, library.bookCount());
     }
 
-
-//    @Test
-//    public void libraryContainsBooks(){
-//        assertEquals(1,library.bookCount())
-//    }
+    @Test
+    public void canCountBooksByGenre(){
+        assertEquals(1, library.numberOfBooksByGenre(Genre.SCIFI));
+    }
 
 }
